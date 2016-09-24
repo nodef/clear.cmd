@@ -13,6 +13,7 @@ namespace orez.oclear {
         static void Main(string[] args) {
             Console.WindowLeft = 0;
             Console.WindowTop = Console.CursorTop;
+            Console.ResetColor();
         }
     }
 }
