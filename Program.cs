@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace orez.oclear {
+namespace App {
     class Program {
 
         // static method
