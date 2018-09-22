@@ -7,3 +7,6 @@ Clear screen like Unix in Windows Console.
 ```
 > eclear
 ```
+
+
+[![Merferry](https://i.imgur.com/NtZ7jC0.jpg)](https://merfery.github.io)
