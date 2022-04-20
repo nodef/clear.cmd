@@ -1,12 +1,31 @@
-Clear screen like Unix in Windows Console.
-> 1. Download [exe file](https://github.com/cmdf/extra-clear/releases/download/1.0.0/eclear.exe).
-> 2. Copy to `C:\Program_Files\Scripts`.
-> 3. Add `C:\Program_Files\Scripts` to `PATH` environment variable.
+Clear screen like Unix in [Windows Console].<br>
+🖥️ [Command prompt](https://www.npmjs.com/package/clear.cmd),
+📜 [Files](https://unpkg.com/clear.cmd/),
 
+> Same as [clear] in Unix. \
+> Source code for [windows executable].
 
+> Stability: [Experimental](https://www.youtube.com/watch?v=L1j93RnIxEo).
+
+[clear]: https://en.wikipedia.org/wiki/Clear_(Unix)
+[Windows Console]: https://en.wikipedia.org/wiki/Win32_console
+[windows executable]: src/cs
+
+<br>
+
+```bash
+# Install on Windows
+$ npm install -g clear.cmd
 ```
-> eclear
+
+<br>
+
+```bash
+$ clear
 ```
 
+<br>
+<br>
 
-[![cmdf](https://i.imgur.com/NtZ7jC0.jpg)](https://cmdf.github.io)
+
+[![](https://i.imgur.com/v5UeMzG.jpg)](https://www.youtube.com/watch?v=jHRiHcgkChw&list=PL2B14E396220BD817&index=9)

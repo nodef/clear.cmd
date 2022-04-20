@@ -1,0 +1,36 @@
+{
+  "name": "clear.cmd",
+  "version": "1.0.0",
+  "description": "Clear screen like Unix in Windows Console.",
+  "preferGlobal": true,
+  "main": "main.exe",
+  "bin": {
+    "clear": "main.exe"
+  },
+  "scripts": {
+    "test": "exit",
+    "deploy": "node ./build.js && ebuild github+publish --publishMin=false --publishBranch=false"
+  },
+  "keywords": [
+    "clear",
+    "unix",
+    "linux",
+    "cli",
+    "console",
+    "windows",
+    "terminal"
+  ],
+  "author": "wolfram77@gmail.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodef/clear.cmd.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nodef/clear.cmd/issues"
+  },
+  "homepage": "https://github.com/nodef/clear.cmd#readme",
+  "devDependencies": {
+    "extra-build": "^1.3.31"
+  }
+}
