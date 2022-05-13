@@ -21,8 +21,17 @@ $ npm install -g clear.cmd
 <br>
 
 ```bash
+# Push screen text to the top, reset cursor.
 $ clear
 ```
+
+<br>
+<br>
+
+
+## References:
+
+- [clear (Unix)][clear]
 
 <br>
 <br>

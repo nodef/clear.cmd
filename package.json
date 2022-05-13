@@ -1,6 +1,6 @@
 {
   "name": "clear.cmd",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Clear screen like Unix in Windows Console.",
   "preferGlobal": true,
   "main": "main.exe",
