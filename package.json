@@ -1,7 +1,7 @@
 {
   "name": "clear.cmd",
-  "version": "1.0.1",
-  "description": "Clear screen like Unix in Windows Console.",
+  "version": "1.0.6",
+  "description": "Clear screen like Unix in Windows Command prompt.",
   "preferGlobal": true,
   "main": "main.exe",
   "bin": {
@@ -18,7 +18,9 @@
     "cli",
     "console",
     "windows",
-    "terminal"
+    "terminal",
+    "command",
+    "prompt"
   ],
   "author": "wolfram77@gmail.com",
   "license": "MIT",

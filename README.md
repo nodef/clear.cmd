@@ -1,15 +1,22 @@
-Clear screen like Unix in [Windows Console].<br>
+Clear screen like Unix in Windows Command prompt.<br>
 🖥️ [Command prompt](https://www.npmjs.com/package/clear.cmd),
 📜 [Files](https://unpkg.com/clear.cmd/),
 
-> Same as [clear] in Unix. \
-> Source code for [windows executable].
+[clear] (similar to `cls` in Windows [Command prompt]) is a [builtin shell command]
+various Unix shells (such as [bash]), which is **clears the terminal** by
+*scrolling down* (until old output is not visible) and *resetting the cursor* to the
+top-left corner of the screen. This package provides the same behaviour as Unix
+`clear` (as mentioned above) on the *Windows Command prompt*. [Source code] for the
+executable is in `C#`.
 
 > Stability: [Experimental](https://www.youtube.com/watch?v=L1j93RnIxEo).
 
 [clear]: https://en.wikipedia.org/wiki/Clear_(Unix)
-[Windows Console]: https://en.wikipedia.org/wiki/Win32_console
-[windows executable]: src/cs
+[Command prompt]: https://en.wikipedia.org/wiki/Cmd.exe
+[builtin shell command]: https://en.wikipedia.org/wiki/Shell_builtin
+[bash]: https://en.wikipedia.org/wiki/Bash_(Unix_shell)
+[Source code]: src/cs
+
 
 <br>
 
