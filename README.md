@@ -3,11 +3,11 @@ Clear screen like Unix in Windows Command prompt.<br>
 📜 [Files](https://unpkg.com/clear.cmd/),
 
 [clear] (similar to `cls` in Windows [Command prompt]) is a [builtin shell command]
-various Unix shells (such as [bash]), which is **clears the terminal** by
+in various Unix shells (such as [bash]), which **clears the terminal** by
 *scrolling down* (until old output is not visible) and *resetting the cursor* to the
 top-left corner of the screen. This package provides the same behaviour as Unix
 `clear` (as mentioned above) on the *Windows Command prompt*. [Source code] for the
-executable is in `C#`.
+executable is written in `C#`.
 
 > Stability: [Experimental](https://www.youtube.com/watch?v=L1j93RnIxEo).
 
@@ -45,3 +45,4 @@ $ clear
 
 
 [![](https://i.imgur.com/v5UeMzG.jpg)](https://www.youtube.com/watch?v=jHRiHcgkChw&list=PL2B14E396220BD817&index=9)
+[![DOI](https://zenodo.org/badge/107167577.svg)](https://zenodo.org/badge/latestdoi/107167577)
