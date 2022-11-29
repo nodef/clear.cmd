@@ -1,6 +1,6 @@
 {
   "name": "clear.cmd",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Clear screen like Unix in Windows Command prompt.",
   "preferGlobal": true,
   "main": "main.exe",
@@ -9,7 +9,8 @@
   },
   "scripts": {
     "test": "exit",
-    "deploy": "node ./build.js && ebuild github+publish --publishMin=false --publishBranch=false"
+    "build": "node ./build",
+    "publish-packages": "node ./build publish-packages"
   },
   "keywords": [
     "clear",
@@ -33,6 +34,6 @@
   },
   "homepage": "https://github.com/nodef/clear.cmd#readme",
   "devDependencies": {
-    "extra-build": "^1.3.31"
+    "extra-build": "^2.2.39"
   }
 }
