@@ -1,6 +1,6 @@
 {
   "name": "clear.cmd",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Clear screen like Unix in Windows Command prompt.",
   "preferGlobal": true,
   "main": "main.exe",
@@ -34,6 +34,6 @@
   },
   "homepage": "https://github.com/nodef/clear.cmd#readme",
   "devDependencies": {
-    "extra-build": "^2.2.39"
+    "extra-build": "^2.2.41"
   }
 }
