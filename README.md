@@ -47,3 +47,4 @@ $ clear
 [![](https://i.imgur.com/v5UeMzG.jpg)](https://www.youtube.com/watch?v=jHRiHcgkChw&list=PL2B14E396220BD817&index=9)
 [![ORG](https://img.shields.io/badge/org-nodef-green?logo=Org)](https://nodef.github.io)
 [![DOI](https://zenodo.org/badge/107167577.svg)](https://zenodo.org/badge/latestdoi/107167577)
+![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/clear.cmd)
