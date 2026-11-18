@@ -11,7 +11,6 @@ env:
   EMAIL: ${{vars.EMAIL}}
   NPM_TOKEN:    ${{secrets.NPM_TOKEN}}
   GITHUB_TOKEN: ${{secrets.GH_TOKEN}}
-  CC_TEST_REPORTER_ID: ${{secrets.CC_TEST_REPORTER_ID}}
   FORCE_COLOR: 1
 
 
@@ -20,48 +19,16 @@ jobs:
     strategy:
       matrix:
         platform: [windows-latest]
-        node: [16.x, 18.x]
-    name: Test with Node ${{matrix.node}} on ${{matrix.platform}}
+        node: [26.x]
+    name: Test on ${{matrix.platform}}
     runs-on: ${{matrix.platform}}
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
           node-version: ${{matrix.node}}
       - run: npm ci
       - run: npm test
-
-
-  # coverage:
-  #   name: Publish coverage
-  #   needs: [test]
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v3
-  #     - uses: actions/setup-node@v2
-  #       with:
-  #         node-version: 18.x
-  #     - run: npm ci
-  #     - run: npm test
-  #     - uses: paambaati/codeclimate-action@v3.0.0
-  #     - uses: coverallsapp/github-action@master
-  #       with:
-  #         github-token: ${{secrets.GITHUB_TOKEN}}
-
-
-  # docs:
-  #   name: Publish docs
-  #   needs: [test]
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v3
-  #     - uses: actions/setup-node@v2
-  #       with:
-  #         node-version: 18.x
-  #     - uses: nodef/git-config.action@v1.0.0
-  #     - run: npm i -g typescript typedoc
-  #     - run: npm ci
-  #     - run: npm run publish-docs
 
 
   packages:
@@ -69,13 +36,12 @@ jobs:
     needs: [test]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
-          node-version: 18.x
-      - uses: nodef/npm-config.action@v1.0.0
+          node-version: 26.x
+      - uses: nodef/npm-config.action@v1.2.0
         with:
           entries: access = public
-      - run: npm i -g typescript rollup typedoc browserify terser
       - run: npm ci
       - run: npm run publish-packages
